@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>メトロノーム</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="metronome">
+        <div id="blink" class="circle"></div>
+        <input type="range" id="tempo-slider" min="30" max="300" value="120">
+        <p id="tempo-text">120 BPM</p>
+        <button id="setMemory">save TEMPO</button>
+        <span id="memory">120</span>
+        <Button id="getMemory">load TEMPO</Button><br>
+        <button class="quick-tempo">80</button>
+        <button class="quick-tempo">100</button>
+        <button class="quick-tempo">120</button>
+        <button class="quick-tempo">140</button>
+        <button class="quick-tempo">160</button>
+        <button class="quick-tempo">180</button>
+        <br>
+        <button id="tempo-down"> −Slower </button>
+        <button id="tempo-up"> +Faster </button>
+        <br>
+        <button id="start-stop">START</button>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tone@14.8.0/build/Tone.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
